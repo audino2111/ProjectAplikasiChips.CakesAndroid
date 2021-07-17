@@ -60,6 +60,7 @@ class AdapterProduk(var activity: Activity, var data: ArrayList<Produk>) : Recyc
         holder.tvNama.text = data[position].name
         holder.tvHarga.text = Helper().gantiRupiah(harga)
         val image = Config.productUrl + data[position].image
+        Log.d("Images", image)
         Picasso.get()
                 .load(image)
                 .placeholder(R.drawable.product)

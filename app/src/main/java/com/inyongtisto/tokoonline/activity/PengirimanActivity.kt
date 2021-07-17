@@ -60,7 +60,7 @@ class PengirimanActivity : AppCompatActivity() {
             }
 
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                if (position != 0) {
+                if (position >= 0) {
                     getOngkir(spn_kurir.selectedItem.toString())
                 }
             }

@@ -47,6 +47,8 @@ class AkunFragment : Fragment() {
     fun mainButton() {
         btnLogout.setOnClickListener {
             s.setStatusLogin(false)
+            s.clear()
+            activity?.recreate();
         }
 
         btnRiwayat.setOnClickListener {
